@@ -1,0 +1,4 @@
+# 部署包必须保留：clone 下来就能直接用
+# 只忽略构建产物
+build/*.log
+build/toolchain/

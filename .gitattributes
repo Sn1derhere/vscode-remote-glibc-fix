@@ -1,0 +1,4 @@
+# 脚本和文档统一用 LF，避免在 Linux 上出现 \r 报错
+*.sh text eol=lf
+*.md text eol=lf
+Dockerfile text eol=lf
