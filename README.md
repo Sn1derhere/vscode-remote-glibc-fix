@@ -1,8 +1,8 @@
-# vscode-remote-ssh-glibc
+# vscode-remote-glibc-fix
 
-Run **VS Code Remote-SSH / Dev Containers on legacy Linux** (glibc below 2.28: CentOS 7, RHEL 7, Oracle Linux 7). Bundled glibc 2.28 sysroot and one-command deploy; fixes `GLIBC_2.28 not found` when VS Code starts `vscode-server`.
+Run **VS Code Remote-SSH / Dev Containers on legacy Linux** (glibc below 2.28: CentOS 7, RHEL 7, Oracle Linux 7、Ubuntu 16.04、Ubuntu 18.04 ). Bundled glibc 2.28 sysroot and one-command deploy; fixes `GLIBC_2.28 not found` when VS Code starts `vscode-server`.
 
-让 VS Code Remote-SSH / Dev Containers 连接 **glibc 2.28 老版本 Linux**（CentOS 7.9 / RHEL 7.9 / Oracle Linux 7.9、以及基于这些基础镜像的工控机容器）的离线部署资料包。
+让 VS Code Remote-SSH / Dev Containers 连接 **glibc 2.28 老版本 Linux**（CentOS 7.9 / RHEL 7.9 / Oracle Linux 7.9、Ubuntu 16.04、Ubuntu 18.04 以及基于这些基础镜像的工控机容器）的离线部署资料包。
 
 核心思路：**不动系统原有 glibc**，单独放一份 glibc 2.28 的 sysroot，通过 3 个环境变量让 VS Code Server 启动时用 patchelf 把自己指向这份新 glibc。
 
