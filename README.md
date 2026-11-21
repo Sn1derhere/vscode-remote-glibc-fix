@@ -1,4 +1,4 @@
-# vscode-glibc-sysroot
+# vscode-remote-ssh-glibc
 
 Run **VS Code Remote-SSH / Dev Containers on legacy Linux** (glibc below 2.28: CentOS 7, RHEL 7, Oracle Linux 7). Bundled glibc 2.28 sysroot and one-command deploy; fixes `GLIBC_2.28 not found` when VS Code starts `vscode-server`.
 
@@ -15,7 +15,7 @@ export VSCODE_SERVER_PATCHELF_PATH="<sysroot>/usr/bin/patchelf"
 ## 目录结构
 
 ```
-vscode-glibc-sysroot/
+vscode-remote-ssh-glibc/
 ├── README.md                                  本文件：资料索引
 ├── deploy.sh                                  工控机一键部署脚本（校验 → 解压 → 验证 → 写环境变量）
 ├── docs/
